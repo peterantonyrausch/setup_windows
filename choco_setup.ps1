@@ -2,5 +2,10 @@ $Packages = '7zip', 'adobereader', 'dbeaver', 'drawio', 'git', 'microsoft-window
 
 ForEach ($Package in $Packages)
 {
-    choco install $Package -y
+    $Command = "choco install $Package -y --exit-when-reboot-detected"
+    Write-Host "Executing command: $Command"
+    Invoke-Expression $Command
 }
+
+Write-Host "Restarting computer..."
+Restart-Computer -Confirm
