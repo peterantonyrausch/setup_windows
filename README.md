@@ -19,4 +19,6 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-(3) Execute o script .ps1
+(3) Execute o script .ps1, reinicie a máquina quando for solicitado e execute o script novamente
+
+(4) Repita o passo 3 até que todos os pacotes estejam instalados
