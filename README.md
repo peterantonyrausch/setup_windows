@@ -10,6 +10,7 @@ Após isso ele irá baixar e instalar todas as dependência de desenvolvimento.
 
 # Script
 (1) Abra o PowerShell como Administrador (Win+X > Windows PowerShell (Admin))
+
 (2) Execute os comandos abaixo:
 
 ```ps
