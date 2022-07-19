@@ -9,8 +9,10 @@ Esse repositório tem como objetivo facilitar o setup quando é formatado/troca 
 (3) Execute os comandos abaixo:
 
 ```ps
+# habilita execucao de scripts
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
+# instala o chocolatey
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
